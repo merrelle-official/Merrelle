@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="mhead">
+    <div class="head-list">
+      <MHead :itemCount="4" :linkText="['hello', 'aboutme', 'mystack', 'projects']" :menuText="['Hello', 'About me','My Stack', 'Projects']"></MHead>
+    </div>
+  </div>
+
+  <div class="main">
+
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MHead from "./components/Head.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MHead
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import './assets/scss/App.scss';
 </style>

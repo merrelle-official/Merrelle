@@ -1,0 +1,37 @@
+@import './App.scss';
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../assets/fonts/Segoe-UI.ttf') format('truetype'),
+         url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype'),
+         url('../assets/fonts/Segoe-UI-Bold-Italic.ttf') format('truetype'),
+         url('../assets/fonts/Segoe-UI-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: $main-text-color;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+div{
+    display: flex;
+    width: 12.5rem;
+    height: 5.125rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-right: 2px solid rgba(255, 255, 255, 0.10);
+    border-left: 2px solid rgba(255, 255, 255, 0.10);
+    transition: all 0.5s;
+}
+
+div:hover{
+    background-color: rgba($color: white, $alpha: 0.2);
+    cursor: pointer;
+}
