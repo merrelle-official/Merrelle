@@ -1,15 +1,114 @@
 
+@media (max-width: 1300px) {
+    .main-myinfo {
+      flex-direction: column;
+      align-items: center;
+    }
+    .photos{
+        margin: 5em 0;
+        
+    }
+}
 .main-myinfo{
-    width: 100%;
-    height: auto;
+    display: flex;
 }
 
 .text-info{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    height: auto;
+    font-family: 'Segoe-UI', sans-serif;
+    p{
+        color: white;
+    }
+    .contacts{
+        color: #7F5AF0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.8125rem;
+        font-weight: 400;
+        margin: 1.31rem 0;
+
+        .git-div, .tg-div{
+            margin: 0 3rem;
+            padding: 0 1.3rem;
+            border-bottom: 5px solid #7F5AF0;
+            display: flex;
+            align-items: center;
+            height: 4.5rem;
+            position: relative;
+            transition: all .35s;
+            p{
+                color: #7F5AF0;
+                position: relative;
+                z-index: 2;
+            }
+        }
+        .git-div::after, .tg-div::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: #7F5AF0;
+            transition: all .35s;
+        }   
+        .git-div:hover, .tg-div:hover{
+            cursor: pointer;
+            p{
+                color: #fff;
+            }
+        }
+        .git-div:hover:after, .tg-div:hover:after{
+            height: 100%;
+          }
+        
+    }
+
+    
+
+    .job-title{
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-decoration-line: underline;
+        text-align: center;
+        margin: 1.31rem 0;
+    }
+    .name-n-age{
+        display: flex;
+        flex-direction: column;
+        margin: 1.31rem 0;
+
+        .name{
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+    
+        }
+        .age{
+            font-size: 2.5rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    
 }
 
 .photos{
-    display: inline-block;
+    display: flex;
     width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin: 2rem 0;
+        width: 20rem;
+        height: auto;
+        border-radius: 1.25rem;
+        box-shadow: 6px 10px 4px 0px #7F5AF0;
+    }
+    
 }

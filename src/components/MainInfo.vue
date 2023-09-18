@@ -2,14 +2,18 @@
     <div class="main-myinfo">
         <div class="text-info">
             <p class="job-title">{{ job_title }}</p>
-            <p class="name">{{ name }}<br/>{{ surname }}</p>
-            <p class="age">{{ age }}</p>
-            <div class="git-div">GitHub</div>
-            <div class="tg-div">Telegram</div>
+            <div class="name-n-age">
+                <p class="name">{{ name }}<br/>{{ surname }}</p>
+                <p class="age">{{ age }}</p>
+            </div>
+            <div class="contacts">
+                <div class="git-div"><p>GitHub</p></div>
+                <div class="tg-div"><p>Telegram</p></div> 
+            </div>
         </div>
 
         <div class="photos">
-            <img :src="photo_url" alt="что от">
+            <img :src="photo_url" alt="фотография">
         </div>
     </div>
 </template>
@@ -47,7 +51,7 @@
             default: 1,
         },
         photo_url: {
-            type: String,
+            type: URL,
             required: true,
         },
     }
