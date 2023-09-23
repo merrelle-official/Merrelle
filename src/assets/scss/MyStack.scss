@@ -1,0 +1,29 @@
+.mystack-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Segoe-UI', sans-serif;
+    font-size: 1.6rem;
+}
+
+.stack-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stack-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+    margin: 4rem 0;
+}
+
+.svg-imgs{
+    width: 8rem;
+    height: auto;
+}

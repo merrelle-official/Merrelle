@@ -5,6 +5,10 @@ $main-text-color: white;
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #app {
     display: flex;
     flex-direction: column;
@@ -22,8 +26,12 @@ $main-text-color: white;
 }
 
 .mhead{
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #1d1d1d;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
@@ -40,5 +48,13 @@ $main-text-color: white;
 }
 
 .allaboutme{
+    margin-top: 7rem;
+}
+
+.allmystack{
+    margin-top: 7rem;
+}
+
+.allmyproj{
     margin-top: 7rem;
 }
