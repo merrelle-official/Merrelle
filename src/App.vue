@@ -14,8 +14,8 @@
     <MyStack class="allmystack" :names="stackNames" :svg_imgs="stackSvg" :mystackTitle="stackTitle"></MyStack>
     <section id="projects"></section>
     <MyProjects class="allmyproj" :title="projTitle" :count_of_projects="projCount" :projName="projNames" :projDescription="projDescriptions" :projLinks="projIsLink" :projGit="projIsGit" :projImg="projImgs"></MyProjects>
-
   </div>
+  <MyFooter class="footer"></MyFooter>
 
 
 
@@ -28,6 +28,7 @@ import MainInfo from "./components/MainInfo.vue"
 import AboutMe from "./components/AboutMe.vue"
 import MyStack from "./components/MyStack.vue"
 import MyProjects from "./components/MyProjects.vue"
+import MyFooter from "./components/Footer.vue"
 
 // Мои фотографии
 import Img1 from "./assets/img/1.jpg"
@@ -52,7 +53,8 @@ export default {
     MainInfo,
     AboutMe,
     MyStack,
-    MyProjects
+    MyProjects,
+    MyFooter
   },
   data() {
     return {
