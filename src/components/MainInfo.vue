@@ -7,8 +7,8 @@
                 <p class="age">{{ age }}</p>
             </div>
             <div class="contacts">
-                <div class="git-div"><p>GitHub</p></div>
-                <div class="tg-div"><p>Telegram</p></div> 
+                <div class="git-div" @click="myContactsClick(git_link)"><p>GitHub</p></div>
+                <div class="tg-div" @click="myContactsClick(tg_link)"><p>Telegram</p></div> 
             </div>
         </div>
 
@@ -54,7 +54,13 @@
             type: URL,
             required: true,
         },
-    }
+    },
+        methods: {
+            myContactsClick(link) {
+                console.log(link);
+                window.open(link, '_blank');
+            }
+        }
  }
 </script>
 

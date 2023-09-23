@@ -7,7 +7,7 @@
 
   <div class="main">
     <section id="hello"></section>
-    <MainInfo class="allinfo" :job_title="jobTitle" :surname="surname" :name="name" :age="age" :photo_url="photos_url"></MainInfo>
+    <MainInfo class="allinfo" :job_title="jobTitle" :surname="surname" :name="name" :age="age" :photo_url="photos_url" :tg_link="myTg" :git_link="myGitHub"></MainInfo>
     <section id="aboutme"></section>
     <AboutMe class="allaboutme" :value="aboutmeValue" :title="aboutmeTitle" :titleofblock="aboutmeBlockTitle" :textofblock="aboutmeBlockText"></AboutMe>
     <section id="mystack"></section>
@@ -58,6 +58,8 @@ export default {
   },
   data() {
     return {
+      myGitHub: "https://github.com/merrelle-official",
+      myTg: "https://t.me/kuroisuns",
       jobTitle: "Frontend-разработчик",
       surname: "Чернышев",
       name: "Владимир",
