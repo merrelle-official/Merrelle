@@ -83,7 +83,7 @@ export default {
       projIsLink: [0],
       projIsGit: [0],
       projImgs: [h2ions_png]
-
+      
     }
   }
 }
